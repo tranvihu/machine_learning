@@ -1,0 +1,14 @@
+Data Standardization And Normalization:
+    Định nghĩa:
+        Data standardization liên quan đến việc chuyển đổi tỉ lệ của dữ liệu sao cho nó có giá trị trung bình là 0 và độ lệch chuẩn là 1. Quá trình này giúp cho dữ liệu dễ hiểu hơn và dễ so sánh hơn bằng cách loại bỏ hiệu ứng của các đơn vị và tỷ lệ khác nhau.
+        Data normalization bao gồm việc chuyển đổi dữ liệu sao cho chúng có phạm vi giá trị cụ thể, thường là từ 0 đến 1. Quá trình này giúp đưa các giá trị dữ liệu về cùng một phạm vi, tạo ra dữ liệu đồng nhất và dễ dàng so sánh hơn.
+    Sự khác biệt:
+        Data standardization chuyển đổi dữ liệu sao cho chúng có giá trị trung bình bằng 0 và độ lệch chuẩn bằng 1. Trong khi đó, data normalization chuyển đổi dữ liệu sao cho chúng có phạm vi giá trị cụ thể, thường là từ 0 đến 1.
+        Data standardization loại bỏ hiệu ứng của các đơn vị và tỷ lệ khác nhau trong dữ liệu, giúp cho dữ liệu dễ hiểu hơn và dễ so sánh hơn. Trong khi đó, data normalization đưa các giá trị dữ liệu về cùng một phạm vi, tạo ra dữ liệu đồng nhất và dễ dàng so sánh hơn.
+        Data standardization được sử dụng khi các giá trị dữ liệu có các đơn vị và tỷ lệ khác nhau, trong khi data normalization được sử dụng khi các giá trị dữ liệu có phạm vi khác nhau.
+        Data standardization có thể ảnh hưởng đến phân phối của dữ liệu, trong khi đó data normalization không ảnh hưởng đến phân phối của dữ liệu.
+Outliers và missing values:
+    Định nghĩa:
+        Outliers (điểm dữ liệu ngoại lai) là các điểm dữ liệu khác biệt đáng kể so với các điểm dữ liệu khác. Các outliers có thể là kết quả của các sai sót trong quá trình thu thập dữ liệu hoặc có thể chỉ ra sự đa dạng trong dữ liệu. Tuy nhiên, outliers có thể ảnh hưởng đến kết quả phân tích của dữ liệu nếu không được xử lý đúng cách. Các phương pháp xử lý outliers có thể bao gồm loại bỏ các outliers, hoặc thay thế các outliers bằng các giá trị mới phù hợp.
+
+        Missing values (giá trị dữ liệu thiếu) là các giá trị dữ liệu không có sẵn hoặc không được thu thập đầy đủ. Các giá trị dữ liệu thiếu có thể làm giảm độ chính xác và độ tin cậy của kết quả phân tích. Các phương pháp xử lý missing values có thể bao gồm thay thế các giá trị thiếu bằng các giá trị dự đoán hoặc các giá trị trung bình của dữ liệu đã có, hoặc loại bỏ các mẫu chứa giá trị dữ liệu thiếu. Tuy nhiên, phương pháp xử lý phụ thuộc vào tỷ lệ giá trị dữ liệu thiếu và tính chất của dữ liệu, và cần được thực hiện cẩn thận để tránh ảnh hưởng đến kết quả phân tích của dữ liệu.        
