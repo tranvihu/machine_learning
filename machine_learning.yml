@@ -12,3 +12,9 @@ Outliers và missing values:
         Outliers (điểm dữ liệu ngoại lai) là các điểm dữ liệu khác biệt đáng kể so với các điểm dữ liệu khác. Các outliers có thể là kết quả của các sai sót trong quá trình thu thập dữ liệu hoặc có thể chỉ ra sự đa dạng trong dữ liệu. Tuy nhiên, outliers có thể ảnh hưởng đến kết quả phân tích của dữ liệu nếu không được xử lý đúng cách. Các phương pháp xử lý outliers có thể bao gồm loại bỏ các outliers, hoặc thay thế các outliers bằng các giá trị mới phù hợp.
 
         Missing values (giá trị dữ liệu thiếu) là các giá trị dữ liệu không có sẵn hoặc không được thu thập đầy đủ. Các giá trị dữ liệu thiếu có thể làm giảm độ chính xác và độ tin cậy của kết quả phân tích. Các phương pháp xử lý missing values có thể bao gồm thay thế các giá trị thiếu bằng các giá trị dự đoán hoặc các giá trị trung bình của dữ liệu đã có, hoặc loại bỏ các mẫu chứa giá trị dữ liệu thiếu. Tuy nhiên, phương pháp xử lý phụ thuộc vào tỷ lệ giá trị dữ liệu thiếu và tính chất của dữ liệu, và cần được thực hiện cẩn thận để tránh ảnh hưởng đến kết quả phân tích của dữ liệu.        
+        
+Ensemble Techniques
+    Định nghĩa:
+        Ensemble Techniques là một kỹ thuật đào tạo các mô hình khác nhau và sau đó gộp chúng lại với nhau để có được dự đoán tốt hơn
+        Có 2 kỹ thuật Ensemble phổ biến là Majority Voting và Plurality Voting
+    
