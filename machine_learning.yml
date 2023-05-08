@@ -159,8 +159,19 @@ II. Machine Learning:
             - t-Distributed Stochastic Neighbour (t-SNE): rất nhạy với các cấu trúc local. t-SNE thường được sử dụng với mục đích visualize dữ liệu nhằm giúp hiểu được thuộc tính lý thuyết của tập dữ liệu. Tuy nhiên đây cũng là phương pháp đòi hỏi hiệu năng tính toán cao và cũng cần được áp dụng các kỹ thuật khác như missing values ratio hoặc scale feature.
             - Hessian Eigenmapping (HLLE): Chiếu điểm dữ liệu xuống chiều thấp hơn và bảo toàn các điểm local giống như LLE nhưng phương pháp tiếp cận sử dụng Hessian matrix
             - Spectral Embedding: sử dụng kỹ thụât spectral (phổ) để mapping dữ liệu xuống chiều thấp hơn, ưu tiên các điểm gần nhau hơn là tuyến tính cận nhau.
-            - Multidimensional scaling (MDS):
+            - Multidimensional scaling (MDS)
+        Characteristics of principal component analysis as one of the dimensionality reduction techniques, explained:
+            Phân tích thành phần chính (PCA) là một kỹ thuật được sử dụng để giảm chiều dữ liệu, bằng cách biến đổi một bộ dữ liệu bao gồm nhiều biến thành một bộ biến gọi là thành phần chính. Mục tiêu của PCA là giảm số lượng biến trong bộ dữ liệu trong khi giữ lại nhiều thông tin ban đầu nhất có thể. Đây là một số đặc điểm chính của PCA:
 
+            Biến đổi tuyến tính: PCA là một kỹ thuật biến đổi tuyến tính, điều này có nghĩa là nó hoạt động trên các tổ hợp tuyến tính của các biến ban đầu.
+
+            Tối đa hóa phương sai: Thành phần chính đầu tiên (PC1) là tổ hợp tuyến tính của các biến ban đầu có phương sai lớn nhất. Các thành phần chính tiếp theo sẽ giữ lại phần còn lại của phương sai, tuy nhiên giá trị này sẽ giảm dần.
+
+            Thành phần chính trực giao: Các thành phần chính là trực giao với nhau, có nghĩa là chúng không tương quan. Điều này đảm bảo rằng mỗi thành phần chính chứa thông tin duy nhất trong dữ liệu.
+
+            Biểu đồ scree: Biểu đồ scree là biểu đồ thể hiện giá trị riêng của các thành phần chính. Nó giúp xác định số lượng thành phần chính cần giữ lại. Khuỷu tay trên biểu đồ scree cho thấy điểm mà các thành phần chính bổ sung không đóng góp đáng kể vào phương sai tổng.
+
+            Phương sai giải thích: Mỗi thành phần chính có thể giải thích một phần của phương sai tổng của dữ liệu ban đầu.
 III. Deep Learning:
     Activation function: 
         Hyperbolic Tangent (Tanh): chức năng kích hoạt quyết định mềm, nó thể hiện 'mức độ' phán đoán tốt
