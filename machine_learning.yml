@@ -1,20 +1,235 @@
-Data Standardization And Normalization:
-    Định nghĩa:
-        Data standardization liên quan đến việc chuyển đổi tỉ lệ của dữ liệu sao cho nó có giá trị trung bình là 0 và độ lệch chuẩn là 1. Quá trình này giúp cho dữ liệu dễ hiểu hơn và dễ so sánh hơn bằng cách loại bỏ hiệu ứng của các đơn vị và tỷ lệ khác nhau.
-        Data normalization bao gồm việc chuyển đổi dữ liệu sao cho chúng có phạm vi giá trị cụ thể, thường là từ 0 đến 1. Quá trình này giúp đưa các giá trị dữ liệu về cùng một phạm vi, tạo ra dữ liệu đồng nhất và dễ dàng so sánh hơn.
-    Sự khác biệt:
-        Data standardization chuyển đổi dữ liệu sao cho chúng có giá trị trung bình bằng 0 và độ lệch chuẩn bằng 1. Trong khi đó, data normalization chuyển đổi dữ liệu sao cho chúng có phạm vi giá trị cụ thể, thường là từ 0 đến 1.
-        Data standardization loại bỏ hiệu ứng của các đơn vị và tỷ lệ khác nhau trong dữ liệu, giúp cho dữ liệu dễ hiểu hơn và dễ so sánh hơn. Trong khi đó, data normalization đưa các giá trị dữ liệu về cùng một phạm vi, tạo ra dữ liệu đồng nhất và dễ dàng so sánh hơn.
-        Data standardization được sử dụng khi các giá trị dữ liệu có các đơn vị và tỷ lệ khác nhau, trong khi data normalization được sử dụng khi các giá trị dữ liệu có phạm vi khác nhau.
-        Data standardization có thể ảnh hưởng đến phân phối của dữ liệu, trong khi đó data normalization không ảnh hưởng đến phân phối của dữ liệu.
-Outliers và missing values:
-    Định nghĩa:
-        Outliers (điểm dữ liệu ngoại lai) là các điểm dữ liệu khác biệt đáng kể so với các điểm dữ liệu khác. Các outliers có thể là kết quả của các sai sót trong quá trình thu thập dữ liệu hoặc có thể chỉ ra sự đa dạng trong dữ liệu. Tuy nhiên, outliers có thể ảnh hưởng đến kết quả phân tích của dữ liệu nếu không được xử lý đúng cách. Các phương pháp xử lý outliers có thể bao gồm loại bỏ các outliers, hoặc thay thế các outliers bằng các giá trị mới phù hợp.
+I. Database:
 
-        Missing values (giá trị dữ liệu thiếu) là các giá trị dữ liệu không có sẵn hoặc không được thu thập đầy đủ. Các giá trị dữ liệu thiếu có thể làm giảm độ chính xác và độ tin cậy của kết quả phân tích. Các phương pháp xử lý missing values có thể bao gồm thay thế các giá trị thiếu bằng các giá trị dự đoán hoặc các giá trị trung bình của dữ liệu đã có, hoặc loại bỏ các mẫu chứa giá trị dữ liệu thiếu. Tuy nhiên, phương pháp xử lý phụ thuộc vào tỷ lệ giá trị dữ liệu thiếu và tính chất của dữ liệu, và cần được thực hiện cẩn thận để tránh ảnh hưởng đến kết quả phân tích của dữ liệu.        
+II. Machine Learning:
+    Data Standardization And Normalization:
+        Định nghĩa:
+            Data standardization liên quan đến việc chuyển đổi tỉ lệ của dữ liệu sao cho nó có giá trị trung bình là 0 và độ lệch chuẩn là 1. Quá trình này giúp cho dữ liệu dễ hiểu hơn và dễ so sánh hơn bằng cách loại bỏ hiệu ứng của các đơn vị và tỷ lệ khác nhau.
+            Data normalization bao gồm việc chuyển đổi dữ liệu sao cho chúng có phạm vi giá trị cụ thể, thường là từ 0 đến 1. Quá trình này giúp đưa các giá trị dữ liệu về cùng một phạm vi, tạo ra dữ liệu đồng nhất và dễ dàng so sánh hơn.
+        Sự khác biệt:
+            Data standardization chuyển đổi dữ liệu sao cho chúng có giá trị trung bình bằng 0 và độ lệch chuẩn bằng 1. Trong khi đó, data normalization chuyển đổi dữ liệu sao cho chúng có phạm vi giá trị cụ thể, thường là từ 0 đến 1.
+            Data standardization loại bỏ hiệu ứng của các đơn vị và tỷ lệ khác nhau trong dữ liệu, giúp cho dữ liệu dễ hiểu hơn và dễ so sánh hơn. Trong khi đó, data normalization đưa các giá trị dữ liệu về cùng một phạm vi, tạo ra dữ liệu đồng nhất và dễ dàng so sánh hơn.
+            Data standardization được sử dụng khi các giá trị dữ liệu có các đơn vị và tỷ lệ khác nhau, trong khi data normalization được sử dụng khi các giá trị dữ liệu có phạm vi khác nhau.
+            Data standardization có thể ảnh hưởng đến phân phối của dữ liệu, trong khi đó data normalization không ảnh hưởng đến phân phối của dữ liệu.
+    Outliers và missing values:
+        Định nghĩa:
+            Outliers (điểm dữ liệu ngoại lai) là các điểm dữ liệu khác biệt đáng kể so với các điểm dữ liệu khác. Các outliers có thể là kết quả của các sai sót trong quá trình thu thập dữ liệu hoặc có thể chỉ ra sự đa dạng trong dữ liệu. Tuy nhiên, outliers có thể ảnh hưởng đến kết quả phân tích của dữ liệu nếu không được xử lý đúng cách. Các phương pháp xử lý outliers có thể bao gồm loại bỏ các outliers, hoặc thay thế các outliers bằng các giá trị mới phù hợp.
+
+            Missing values (giá trị dữ liệu thiếu) là các giá trị dữ liệu không có sẵn hoặc không được thu thập đầy đủ. Các giá trị dữ liệu thiếu có thể làm giảm độ chính xác và độ tin cậy của kết quả phân tích. Các phương pháp xử lý missing values có thể bao gồm thay thế các giá trị thiếu bằng các giá trị dự đoán hoặc các giá trị trung bình của dữ liệu đã có, hoặc loại bỏ các mẫu chứa giá trị dữ liệu thiếu. Tuy nhiên, phương pháp xử lý phụ thuộc vào tỷ lệ giá trị dữ liệu thiếu và tính chất của dữ liệu, và cần được thực hiện cẩn thận để tránh ảnh hưởng đến kết quả phân tích của dữ liệu.        
+
+    Ensemble Techniques:
+        Định nghĩa:
+            Ensemble Techniques là một kỹ thuật đào tạo các mô hình khác nhau và sau đó gộp chúng lại với nhau để có được dự đoán tốt hơn
+            Majority Voting: mỗi mô hình bỏ phiếu cho 1 lớp và lớp nào chiếm đa số sẽ thắng
+            Plurality Voting: Mỗi mô hình cung cấp 1 giá trị xác xuất cho 1 lớp và lớp nào có tổng xác xuất lớn nhất sẽ thắng
+
+    Stacking:
+        Định nghĩa:
+            Stacking là thuật toán kết hợp nhiều mô hình máy học trên cùng 1 tập dữ liệu.
+            - Bagging: cùng 1 tập dữ liệu được đưa vào các mô hình khác nhau
+            - Boosting: output của mô hình này là input của mô hình sau
+            - Stacking: cùng 1 tập dữ liệu được đưa vào các mô hình khác nhau, kết quả của các mô hình sẽ được tổng hợp và đưa qua 1 mô hình/mạng để xác định kết quả cuối cùng
+            https://viblo.asia/p/lam-chu-stacking-ensemble-learning-Az45b0A6ZxY
+
+    Overfitting and Underfitting:
+        Định nghĩa:
+            - Underfitting: mô hình không đủ sức để học ra được những quy luật, xu hướng trong bộ train và dẫn đến chất lượng của các dự đoán trên bộ test thấp, nói cách khác, giá trị loss của mô hình trên cả bộ train và test đều thấp. 
+            Khi hiện tượng Underfitting xảy ra, mô hình đó sẽ không phải là tốt với bất kì bộ dữ liệu nào trong vấn đề đang nhắc tới.
+            Hiện tượng Underfitting thường ít xảy ra trong bài toán hơn. Khi Underfitting xảy ra, ta có thể khắc phục bằng cách thay đổi thuật toán hoặc là bổ sung thêm dữ liệu đầu vào.
+            - Overfitting: hiện tượng xảy ra khi mô hình machine learning quá phức tạp so với bộ dữ liệu. Lúc này, mô hình, thay vì việc khái quát hóa bộ dữ liệu train, lại học thuộc phần lớn (hoặc thậm chí toàn bộ) bộ dữ liệu train. Điều này khiến cho mô hình đạt giá trị loss rất thấp trên bội train. Nhưng đối với bộ test, độ chính xác của mô hình vẫn thấp do mô hình chỉ ghi nhớ và dự đoán tốt những điểm dữ liệu trong bộ train mà thôi.
+            Khi tăng dần độ phức tạp của mô hình để giải quyết vấn đề underfit thì ra sẽ gặp overfit. 
+            Để giải quyết overfit cách đơn giản nhất là tăng số lượng dữ liệu cho bộ train. Tuy nhiện trường hợp không thể tăng thêm được bộ dữ liệu train thì có thể sử dụng Data augmentation (tạo thêm dữ liệu cho bộ train), Regularization (tác động và hàm loss -> giảm bớt overfit)
+            https://trituenhantao.io/kien-thuc/van-de-overfitting-underfitting-trong-machine-learning/
+
+    SVM
+        Định nghĩa:
+            SVM là một thuật toán giám sát, nó có thể sử dụng cho cả việc phân loại hoặc đệ quy. Tuy nhiên nó được sử dụng chủ yếu cho việc phân loại. Trong thuật toán này, chúng ta vẽ đồi thị dữ liệu là các điểm trong n chiều ( ở đây n là số lượng các tính năng bạn có) với giá trị của mỗi tính năng sẽ là một phần liên kết. Sau đó chúng ta thực hiện tìm "đường bay" (hyper-plane) phân chia các lớp. Hyper-plane nó chỉ hiểu đơn giản là 1 đường thẳng có thể phân chia các lớp ra thành hai phần riêng biệt.
+
+        Ưu điểm:
+            - Xử lý trên không gian số chiều cao: SVM là một công cụ tính toán hiệu quả trong không gian chiều cao, trong đó đặc biệt áp dụng cho các bài toán phân loại văn bản và phân tích quan điểm nơi chiều có thể cực kỳ lớn.
+            - Tiết kiệm bộ nhớ: Do chỉ có một tập hợp con của các điểm được sử dụng trong quá trình huấn luyện và ra quyết định thực tế cho các điểm dữ liệu mới nên chỉ có những điểm cần thiết mới được lưu trữ trong bộ nhớ khi ra quyết định.
+            - Tính linh hoạt - phân lớp thường là phi tuyến tính. Khả năng áp dụng Kernel mới cho phép linh động giữa các phương pháp tuyến tính và phi tuyến tính từ đó khiến cho hiệu suất phân loại lớn hơn.
+        Nhược điểm:
+            - Bài toán số chiều cao: Trong trường hợp số lượng thuộc tính (p) của tập dữ liệu lớn hơn rất nhiều so với số lượng dữ liệu (n) thì SVM cho kết quả khá tồi.
+            - Chưa thể hiện rõ tính xác suất: Việc phân lớp của SVM chỉ là việc cố gắng tách các đối tượng vào hai lớp được phân tách bởi siêu phẳng SVM. Điều này chưa giải thích được xác suất xuất hiện của một thành viên trong một nhóm là như thế nào. Tuy nhiên hiệu quả của việc phân lớp có thể được xác định dựa vào khái niệm margin từ điểm dữ liệu mới đến siêu phẳng phân lớp mà chúng ta đã bàn luận ở trên.
+
+        Kết luận: SVM là một phương pháp hiệu quả cho bài toán phân lớp dữ liệu. Nó là một công cụ đắc lực cho các bài toán về xử lý ảnh, phân loại văn bản, phân tích quan điểm. Một yếu tố làm nên hiệu quả của SVM đó là việc sử dụng Kernel function khiến cho các phương pháp chuyển không gian trở nên linh hoạt hơn
+            https://machinelearningcoban.com/2017/04/09/smv/
+            https://viblo.asia/p/gioi-thieu-ve-support-vector-machine-svm-6J3ZgPVElmB
+
+    Kernel SVM:
+        https://machinelearningcoban.com/2017/04/22/kernelsmv/
+        Áp dụng SVM lên bài toán mà dữ liệu giữa hai classes là hoàn toàn không linear separable (không phân biệt tuyến tính).
+        Ý tưởng cơ bản của Kernel SVM và các phương pháp kernel nói chung là tìm một phép biến đổi sao cho dữ liệu ban đầu là không phân biệt tuyến tính được biến sang không gian mới. Ở không gian mới này, dữ liệu trở nên phân biệt tuyến tính.
+        Tính chất của các hàm kerrnel:
+            - Đối xứng
+            - Về lý thuyết, hàm kerrnel cần thỏa mãn điều kiện Mercer -> Tính chất này để đảm bảo cho việc hàm mục tiêu của bài toán đối ngẫu là lồi.
+        Một số hàm kernel thông dụng:
+            - Linear
+            - Polynomial
+            - Radial Basic Function
+            - Sigmoid
+            - Kernel tự định nghĩa
+
+    True positives: Các điểm Positive thực được nhận Đúng là Positive (Dự đoán đúng là Positive)
+    False positives: Các điểm Negative thực được nhận Sai là Positive (Dự đoán sai là Positive)
+    True negatives: Các điểm Negative thực được nhận Đúng là Negative (Dự đoán đúng là Negative)
+    False negatives: Các điểm Positive thực được nhận Sai là Negative (Dự đoán sai là Negative)
+    Recall:  Thể hiện khả năng phát hiện tất cả các postivie, tỷ lệ này càng cao thì cho thấy khả năng bỏ sót các điểm Positive là thấp
+    Precision: Thể hiện sự chuẩn xác của việc phát hiện các điểm Positive. Số này càng cao thì model nhận các điểm Positive càng chuẩn.
+    F1 score: Là số dung hòa Recall và Precision giúp ta có căn cứ để lựa chọn model. F1 càng cao càng tốt.
+    Đường ROC : Thể hiện sự tương quan giữa Precision và Recall khi thay đổi threshold.
+    Area Under the ROC: Là vùng nằm dưới ROC, vùng này càng lớn thì model càng tốt.
+    Accuracy: tỉ lệ giữa số điểm được phân loại đúng và tổng số điểm. Accuracy chỉ phù hợp với các bài toán mà kích thước các lớp dữ liệu là tương đối như nhau.
+    https://miai.vn/2020/06/16/oanh-gia-model-ai-theo-cach-mi-an-lien-chuong-2-precision-recall-va-f-score/
+    https://machinelearningcoban.com/2017/08/31/evaluation/
+
+    Clustering:
+        K-means: phân cụm phân chia tập dữ liệu đã cho bằng cách chọn trung tâm và gán nhãn cho từng điểm dữ liệu
+            Tóm tắt thuật toán:
+                - Đầu vào: Dữ liệu X và số lượng cluster cần tìm K
+                - Đầu ra: Các center M và label vector cho từng điểm dữ liệu Y.
+                - Phương pháp: 
+                    1. Chọn K điểm bất kỳ làm các center ban đầu. 
+                    2. Phân mỗi điểm dữ liệu vào cluster có center gần nó nhất.
+                    3. Nếu việc gán dữ liệu vào từng cluster ở bước 2 không thay đổi so với vòng lặp trước nó thì ta dừng thuật toán.
+                    4. Cập nhật center cho từng cluster bằng cách lấy trung bình cộng của tất các các điểm dữ liệu đã được gán vào cluster đó sau bước 2.
+                    5. Quay lại bước 2.
+
+        DBSCAN: Phân cụm không gian dựa trên mật độ của các ứng dụng có nhiễu và chấp nhận nhiễu trong kết quả của nó (nhiễu có nghĩa là một số điểm dữ liệu sẽ không được gán nhãn)
+            - minPts: Là một ngưỡng số điểm dữ liệu tối thiểu được nhóm lại với nhau nhằm xác định một vùng lân cận epsilon có mật độ cao. Số lượng minPts không bao gồm điểm ở tâm
+            - epsilon: Một giá trị khoảng cách được sử dụng để xác định vùng lân cận epsilon của bất kỳ điểm dữ liệu nào.
+            - core (diểm lõi): Đây là một điểm có ít nhất minPts điểm trong vùng lân cận epsilon của chính nó
+            - border (điểm biên): Đây là một điểm có ít nhất một điểm lõi nằm ở vùng lân cận epsilon nhưng mật độ không đủ minPts điểm
+            - noise (điểm nhiễu): Đây là điểm không phải là điểm lõi hay điểm biên
+            - Eps-neighborhood (Vùng lân cận epsilon): của một điểm dữ liệu P được định nghĩa là tợp hợp tất cả các điểm dữ liệu nằm trong phạm vi bán kính epsilon xung quanh điểm P
+            - Directly density-reachable (Khả năng tiếp cận trực tiếp mật độ): đề cập tới việc một điểm có thể tiếp cận trực tiếp tới một điểm dữ liệu khác. Cụ thể là một điểm Q được coi là có thể tiếp cận trực tiếp bởi điểm P tương ứng với tham số epsilon và minPts nếu như nó thoả mãn hai điều kiện: Q nằm trong vùng lân cận epsilon và số lượng các điểm dữ liệu nằm trong vùng lân cận epsilon tối thiểu là minPts
+            - Density-reachable (Khả năng tiếp cận mật độ): liên quan đến cách hình thành một chuỗi liên kết điểm trong cụm. 
+            Tóm tắt thuật toán:
+                - Đầu vào: Dataset, Eps, MinPts
+                - Đầu ra: Label of each data point in the dataset..
+                - Phương pháp: 
+                    For each point p in dataset:
+                        Step 1: Get the next cluster id c.
+                        Step 2: If p is not assigned cluster, go to Step 3.
+                            Else, go to the next point p in the dataset.
+                        Step 3: Get all the points around p, we call seeds_list.
+                            If length of seeds_list < MinPts,assign label of p to NOISEand go to the next point p in the dataset.
+                            Else,assign all points in seeds_list to cluser id cand go toStep 4.
+                        Step 4:
+                            For each point q in seeds_list:
+                                Step 4.1: Get the points around q.
+                                    If number of points around q < MinPts, remove q from seed_list and go to the next point q in seeds_list.
+                                    Else, go to Step 4.2.
+                                Step 4.2: For each point t in the points around q.
+                                    If t doesn't have label, assign label of t to cluser id c and add t into seed_list.
+                                    If label of t is NOISE, assign label of t to cluser id c.
+                                    Else:
+                                        If there are remaining points in the points around q, go to the next point in the points around q.
+                                        Else: end the loop and go to Step 4.3
+                                Step 4.3:
+                                    If there are remaining points in seeds_list, go to the next point in seeds_list.
+                                    Else: end the loop and go to Step 5.
+                        Step 5:
+                            If there are remaining points in the dataset, go to the next point in dataset.
+                            Else: end the algorithm.
+
+    Dimensionality reduction: Phương pháp giảm chiều dữ liệu
+        https://viblo.asia/p/cac-ky-thuat-dimensionality-reduction-OeVKB98A5kW
+        Ưu điểm: Cải thiện độ chính xác của model do giảm thiểu điểm dữ liệu dư thừa, nhiễu
+            Model huấn luyện nhanh hơn (do dimension đã giảm) và giảm tài nguyên sử dụng để tính toán.
+            Kết quả của mô hình có thể được phân tích dễ dàng hơn
+            Giảm overfitting trong nhiều trường hợp. Với quá nhiều feature trong dữ liệu, mô hình trở nên phức tạp và có xu hướng overfit trên tập huấn luyện
+            Dễ dàng hơn trong việc visualize dữ liệu (plot trên miền 2D hay 3D)
+            Giảm thiểu trường hợp multicolinearity (đa cộng tuyến tính). Trong các bài toán regression, multicolinearity xảy ra khi các biến độc lập trong mô hình phụ thuộc tuyến tính lẫn nhau
+        Feature Selection + Elimination:
+            - Missing values ratio: Các cột hay feature thiếu nhiều giá trị sẽ hầu như không đóng góp vào mô hình machine learning. Vì vậy, việc chọn feature bỏ có thể dựa trên threshold tỉ lệ giá trị missing của feature đó. Giá trị threshold càng cao thì độ reduction càng lớn.
+            - Low-variance filter: Feature có variance (phương sai) thấp sẽ không đóng góp nhiều trong mô hình. Vậy tương tự cách trên, nếu dưới threshold nhất định thì sẽ loại bỏ feature đó.
+            - High-correlation filter: Các feature nếu có sự tương quan có thể được coi như nhau trong mô hình. Điều này khiến việc tồn tại nhiều feature giống nhau không cần thiết. Nếu giữ lại nhiều feature tương quan sẽ giảm hiệu năng mô hình đáng kể (đặc biệt các mô hình linear hay logistic regression).
+            - Random Forest: Phương pháp này cũng tương đối phổ biến và có ích. Việc sử dụng decision tree có thể tận dụng lợi thế thống kê học để tìm ra feature chứa nhiều thông tin để giữ lại nhất. Thuật toán random forest (sklearn) chỉ nhận giá trị số, nên cần phải hot encoding.
+            - Backwards-feature elimination: Tiếp cận hướng top down, bắt đầu với tất cả feature, và loại bỏ từng feature cho đến hết.
+            - Forward Feature Selection: Ngược lại phương pháp trước, từ một feature và tăng dần các feature tới khi mô hình đạt giá trị tối ưu.
+        Linear:
+            - Factor Analysis: Các biến được gộp thành nhóm chung theo correlation. Mỗi nhóm này được coi như là một factor, với số lượng factor nhỏ hơn số chiều gốc của tập dữ liệu. Tuy nhiên điểm trừ là hơi khó quan sát sự tách biệt giữa các factor khi visualize
+            - Principal component analysis: aka PCA. Đây là một thuật toán unsupervised giúp giảm chiều dữ liệu và vẫn giữ được nhiều thông tin nhất có thể. Thường được sử dụng với kiểu dữ liên tục
+            - Linear Discriminatory Analysis: Kỹ thuật supervised, mục tiêu nhắm tới việc giữ nhiều nhất tính chất quyết định phân loại của các biến phụ thuộc. Thuật toán LDA tính toán khả năng phân biệt các lớp, sau đó tính khoảng cách giữa các mẫu của mỗi lớp cùng với trung bình. Cuối cùng đưa tập dữ liệu về chiều nhỏ hơn.
+            - Singular Value Composition: SVD trích xuất feature quan trọng nhất khỏi tập dữ liệu. Phương pháp này khá phổ biến vì dựa trên mô hình toán học tuyến tính. Nhìn chung SVD sẽ tận dụng trị riêng và vector riêng để xác định và tách các biến thành 3 ma trận với mục đích loại bỏ các feature ít quan trọng trong tập dữ liệu.
+            - Independent Component Analysis: ICA phương pháp này dựa trên lý thuyết truyền ti và cũng là 1 một phương pháp rất phổ biến. PCA sẽ tìm các yếu tố ít tương quan trong khi ICA chú trọng vào các biến độc lập
+        Manifold learning hay non-linear method:
+            - Isometric Feature Mapping (Isomap): Phương pháp này bảo toàn được mối liên hệ của tập dữ liệu bằng cách tạo ra tập dữ liệu embedded. Đầu tiên, thuật toán tạo ra mạng lân cận, ước lượng khoảng cách trắc địa, khoảng cách ngắn nhất giữa hai điểm trên bề mặt cong, giữa tất cả các điểm. Và cuối cùng, bằng việc sử dụng phân rã trị riêng của ma trận khoảng cách Geodesic, tập dữ liệu với số chiều nhỏ hơn được tạo ra
+            - t-Distributed Stochastic Neighbour (t-SNE): rất nhạy với các cấu trúc local. t-SNE thường được sử dụng với mục đích visualize dữ liệu nhằm giúp hiểu được thuộc tính lý thuyết của tập dữ liệu. Tuy nhiên đây cũng là phương pháp đòi hỏi hiệu năng tính toán cao và cũng cần được áp dụng các kỹ thuật khác như missing values ratio hoặc scale feature.
+            - Hessian Eigenmapping (HLLE): Chiếu điểm dữ liệu xuống chiều thấp hơn và bảo toàn các điểm local giống như LLE nhưng phương pháp tiếp cận sử dụng Hessian matrix
+            - Spectral Embedding: sử dụng kỹ thụât spectral (phổ) để mapping dữ liệu xuống chiều thấp hơn, ưu tiên các điểm gần nhau hơn là tuyến tính cận nhau.
+            - Multidimensional scaling (MDS):
+
+III. Deep Learning:
+    Activation function: 
+        Hyperbolic Tangent (Tanh): chức năng kích hoạt quyết định mềm, nó thể hiện 'mức độ' phán đoán tốt
+            Hội tụ về -1 khi giá trị giảm và hội tụ về 1 khi giá trị tăng.
+            Tại điểm giá trị đầu vào gần bằng 0, đầu ra thay đổi nhanh chóng
+            tanh có một tính năng có thể nhanh chóng tính toán giá trị vi phân bằng cách sử dụng giá trị của hàm ban đầu.
+        Sigmoid: chức năng kích hoạt quyết định mềm, nó thể hiện 'mức độ' phán đoán tốt
+            Đầu ra nằm trong khoảng từ 0,0 đến 1,0 và có thể biểu thị 'xác suất'
+            Tại điểm giá trị đầu vào gần bằng 0, đầu ra thay đổi nhanh chóng
+            Sigmoid có một tính năng có thể nhanh chóng tính toán giá trị vi phân bằng cách sử dụng giá trị của hàm ban đầu.
+        Softmax: Chức năng hoạt động để phân loại nhiều lớp, với cùng số lượng đầu vào và đầu ra
+            Mỗi đầu ra có giá trị từ 0,0 đến 1,0 và tổng của tất cả các giá trị phải bằng 1
+            Thể hiện xác suất thuộc về một trong nhiều lớp
+            Ít được sử dụng hơn trong học máy, nhưng thường được sử dụng trong học sâu
+            Softmax có thể hiểu là chuẩn hóa các giá trị hàm mũ của mỗi đầu vào thành tổng bằng 1.
+        ReLU: Đơn vị tuyến tính chỉnh lưu
+            Hàm kích hoạt rất đơn giản thay thế các giá trị nhỏ hơn 0 bằng 0
+            Hàm kích hoạt được sử dụng nhiều nhất trong học sâu, do các đặc tính phi tuyến tính
+            Vì giá trị vi phân không đổi (0 hoặc 1) nên nó có đặc điểm học tốt
+            Thao tác cực nhanh, cách thực hiện đơn giản
+            ReLU có thể được hiểu là một hàm ngưỡng và giá trị ngưỡng có thể được xác định bởi độ lệch của hàm trước đó.
         
-Ensemble Techniques
-    Định nghĩa:
-        Ensemble Techniques là một kỹ thuật đào tạo các mô hình khác nhau và sau đó gộp chúng lại với nhau để có được dự đoán tốt hơn
-        Có 2 kỹ thuật Ensemble phổ biến là Majority Voting và Plurality Voting
-    
+    Loss functions: chức năng được tối ưu hóa (tối thiểu hóa), nó phải được xác định cho việc học mạng nơ-ron nhân tạo.
+        Mean Squared Error; MSE: hàm mất mát cơ bản nhất, nó có ưu điểm là dễ phân biệt
+            Sai số càng lớn thì hàm mất mát càng tăng nhanh.
+            Nó thường được sử dụng để học các thuật toán hồi quy.
+        Mean Absolute Error; MAE: đặc trưng bởi giá trị tổn thất tăng liên tục ngay cả khi sai số tăng.
+            Ngoại lệ có các tính năng mạnh mẽ.
+            Nó thường được sử dụng để học các thuật toán hồi quy.
+        Cross Entropy Error; CEE: Được sử dụng để đánh giá đầu ra chức năng kích hoạt softmax.
+            Câu trả lời đúng sử dụng mã hóa one-hot.
+            Giá trị hàm mất chỉ xảy ra trong đúng lớp bằng cách mã hóa một lần.
+        
+    Backpropagation: 
+        Vanishing gradient: Khi có nhiều lớp, các lớp ở xa đầu ra không được học
+            Thuật toán lan truyền ngược được phát triển vào những năm 1980, nhưng nhiều lớp không thể học được do Vanishing gradient.
+            Xảy ra khi chức năng kích hoạt được nhân lên
+            Đạo hàm của hàm kích hoạt sigmoid, được sử dụng rộng rãi vào thời điểm đó, là rất nhỏ
+            Trong quá trình lan truyền ngược, khi hàm sigmoid được nhân lên nhiều lần, độ dốc giảm nhanh chóng.
+        Deep Belief Network; DBN: Phương pháp học trước sử dụng máy Boltzmann hạn chế được đề xuất vào năm 2006
+            Cải thiện giá trị ban đầu của deep neural network để gradient không giảm
+            Nỗ lực cải thiện độ dốc bằng tanh
+            Gradient đã được cải thiện rất nhiều với sự ra đời của ReLU và được sử dụng làm tiêu chuẩn
+        
+    Neural network deploy step:
+        1. Separation of datasets (training data, validation data, test data)
+        2. Separation of training data into batches
+        3. Artificial neural network model definition
+        4. Implementation of learning loop
+            4.1 Evaluate the loss function batch by batch
+            4.2 Updating parameters using stochastic gradient descent
+            4.3 Evaluate the loss function of the validation dataset
+        5. Output test results of trained models
+
+    Recurrent neural network: 
+        Gradient vanishing (gradient descent): 
+            In deep neural networks, the gradient loss problem occurs as the layers deepen.
+            The recurrent neural network has a gradient loss problem as it gets longer in time
+            If there is a large gap between input and information use, learning ability is reduced
+            Expressed in the form of increasing time-step from left to right
+            The fully coupled layer is simply expressed with tanh, the activation function.
+        Long Short-Term Memory (LSTM): 
+            It is an improved structure of the basic recurrent neural network, and it has the ability to remember features for a long time and forget features to forget quickly.
+        
+        
+        
+        
+        
+        
+        
+        
+        
