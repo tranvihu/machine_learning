@@ -1,5 +1,5 @@
 I. Database:
-
+    Database: dữ liệu có cấu trúc được lưu trữ điện tử trong một hệ thống máy tính. Một bộ sưu tập thông tin hoặc dữ liệu có tổ chức.
 II. Machine Learning:
     Data Standardization And Normalization:
         Định nghĩa:
@@ -233,14 +233,23 @@ III. Deep Learning:
             If there is a large gap between input and information use, learning ability is reduced
             Expressed in the form of increasing time-step from left to right
             The fully coupled layer is simply expressed with tanh, the activation function.
-        Long Short-Term Memory (LSTM): 
-            It is an improved structure of the basic recurrent neural network, and it has the ability to remember features for a long time and forget features to forget quickly.
+        Long Short-Term Memory (LSTM): It is an improved structure of the basic recurrent neural network, and it has the ability to remember features for a long time and forget features to forget quickly.
+            LSTM-States: 
+                Cell state: cấu trúc có thể duy trì bộ nhớ trong một thời gian dài và được đặc trưng bởi việc nhận các tính năng mới thông qua bổ sung (residual connection)
+                Hidden state: thông tin được xuất ra từ lớp và được chuyển sang bước thời gian tiếp theo
+            Forget Gate: A function that removes the feature you want to forget by multiplying the state value cell state that has an output of [0, 1] due to the sigmoid activation function
+            Input Gate: State value with output of [0, 1] due to sigmoid activation function. Determine how much of the newly extracted feature to remember by multiplying it with the new feature
+            Output Gate: State value with output of [0, 1] due to sigmoid activation function. Deciding which feature of the cell state to export as an output (hidden state)
         
+        LeNet-5: nghiên cứu mang tính bước ngoặt của Giáo sư LeCun đã áp dụng cho bộ dữ liệu MNIST (LeCune.ta,l 1989)
+            Nghiên cứu có cơ sở vững chắc về cấu trúc cơ bản của mạng thần kinh tích chập (CNN)
+            Giải các bài toán đa phân loại bằng cách kết hợp các lớp tích chập và các lớp có thể kết hợp đầy đủ
         
-        
-        
-        
-        
-        
-        
-        
+        Autoencoder: mạng ANN có khả năng học hiệu quả các biểu diễn của dữ liệu đầu vào mà không cần nhãn, nói cách khác, giả sử từ một hình ảnh có thể tái tạo ra một bức ảnh có liên quan chặt chẽ với bức ảnh đầu vào đó. Đầu vào loại mạng neural này không có nhãn, tức là mạng có khả năng học không giám sát (Unsupervised Learning)
+            Lớp đầu vào: Lớp nhận dữ liệu đầu vào sẽ được mã hóa.
+            Encoder: Module có nhiệm vụ nén dữ liệu đầu vòa thành một biễu diễn được mã hóa (coding), thường nhỏ hơn một vài bậc so với dữ liệu đầu vào -> kết quả được gọi là Embedding vector, quá trình mã hóa được gọi là học biểu diễn
+            Bottleneck: Module chứa các biểu diễn tri thức được nén (chính là output của Encoder), đây là phần quan trọng nhất của mạng bới nó mang đặc trưng của đầu vào, có thể dùng để tái tạo ảnh, lấy đặc trưng của ảnh, ….
+            Denoising: Sửa đổi lớp đầu vào để thêm khử nhiễu bằng cách thêm nhiễu Gaussian vào lớp đầu vào hoặc thêm nhiễu xung bằng cách áp dụng dropout cho lớp đầu vào
+            Decoder: Module giúp mạng giải nén các biểu diễn tri thức và tái cấu trúc lại dữ liệu từ dạng mã hóa của nó, mô hình học dựa trên việc so sánh đầu ra của Decoder với đầu vào ban đầu (Input của Encoder), có cùng kích thước với lớp đầu vào
+            https://viblo.asia/p/tim-hieu-ve-autoencoder-oOVlYvJv58W
+            Embedding vector
